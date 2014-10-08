@@ -8,13 +8,13 @@ using KSP.IO;
 
 namespace PluginBaseFramework
 {
-	class Settings : PluginBase
+	class KSPSettings : PluginBase
 	{
 
 		public delegate void SettingsChangedEventHandler();
 		public static event SettingsChangedEventHandler SettingsChanged;
 
-		protected static PluginConfiguration cfg = PluginConfiguration.CreateForType<Settings>();
+		protected static PluginConfiguration cfg = PluginConfiguration.CreateForType<KSPSettings>();
 
 		public static void load()
 		{
